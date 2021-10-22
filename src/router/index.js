@@ -40,7 +40,7 @@ const routes = [
   {
     path: '/profile',
     name: '个人',
-    component: () => import('@/views/profile/profile')
+    component: () => import('@/views/profile/profile.vue')
   }
 ]
 
