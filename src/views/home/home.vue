@@ -6,6 +6,10 @@
       </nav-bar>
     </div>
     <qing-tree :data="data" :props="defaultProps" show-checkbox @node-click="handleNodeClick"></qing-tree>
+    <div class="wrap">
+      <div class="wrap-item">child1</div>
+      <div class="wrap-item">child2</div>
+    </div>
   </div>
 </template>
 
@@ -94,5 +98,19 @@ export default {
   background-color: #FF99A0;
   color: #FFFFFF;
   text-align: center;
+}
+.wrap{
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 400px;
+  background:lightblue;
+  justify-content: center;
+  align-items: center;
+  .wrap-item{
+    width: 50px;
+    height: 50px;
+    background-color:lightpink;
+  }
 }
 </style>
